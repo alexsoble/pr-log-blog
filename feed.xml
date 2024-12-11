@@ -13,7 +13,9 @@ layout: null
         {% for post in site.posts %}
         <item>
             <title>{{ post.category }} PR</title>
-            <description>weight: {{ post.weight}}, reps: {{ post.reps }}, description: {{ post.description }}</description>
+            <description>
+                weight: {{ post.weight }}, reps: {{ post.reps }}{% if post.description %}, description: {{ post.description }}{% endif %}
+            </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <guid>{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
             <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
