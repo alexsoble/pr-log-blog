@@ -1,5 +1,5 @@
 ---
-title:			sandbag carry
+title:			sandbag carry PR
 layout: 		pr
 category:		sandbag-carry
 weight: 		150#
