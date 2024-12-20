@@ -26,14 +26,22 @@
 				<td>weight</td>
 				<td>{{ page.weight }}</td>
 			</tr>
-			<tr>
-				<td>reps</td>
-				<td>{{ page.reps }}</td>
-			</tr>
+      <tr>
+        <td>reps</td>
+        <td>{{ page.reps }}</td>
+      </tr>
+      {% if page.sets %}
+      <tr>
+        <td>sets</td>
+        <td>{{ page.sets }}</td>
+      </tr>
+      {% endif %}
+      {% if page.description %}
 			<tr>
 				<td>description</td>
 				<td>{{ page.description }}</td>
 			</tr>
+      {% endif %}
 		</table>
 	</main>
   </body>
