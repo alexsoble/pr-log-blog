@@ -4,7 +4,7 @@ build:
 pub:
 	git push origin main
 
-pub post:
+pr:
 	git add .
 	git commit -m "yay pr"
 	git push origin main
